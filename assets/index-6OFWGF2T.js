@@ -5625,11 +5625,14 @@ function ii({order: e, onAccept: r, loading: i}) {
                     size: 14
                 }), " THƯỞNG HIỆU SUẤT HOÀN THÀNH ĐƠN HÀNG: +", null == (x = e.adminBonus) ? void 0 : x.toLocaleString(), "đ"]
             }), b > 0 ? s.jsxs("button", {
-                disabled: !0,
-                onClick: e => e.stopPropagation(),
-                className: "bg-slate-400 text-white font-bold py-3 w-full text-[15px] rounded-xl shadow-md uppercase tracking-wider",
-                children: ["ĐỌC ĐƠN HÀNG (", b, "s)"]
-            }) : s.jsx("button", {
+    disabled: !1,
+    onClick: e => {
+        e.stopPropagation(),
+        r()
+    },
+    className: "bg-slate-400 text-white font-bold py-3 w-full text-[15px] rounded-xl shadow-md uppercase tracking-wider",
+    children: ["ĐỌC ĐƠN HÀNG (", b, "s)"]
+}) : s.jsx("button", {
                 onClick: e => {
                     e.stopPropagation(),
                     r()
