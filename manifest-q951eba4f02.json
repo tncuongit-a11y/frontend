@@ -1,7 +1,7 @@
 {
   "name": "AloShipp Tài Xế",
   "short_name": "AloShipp Driver",
-  "start_url": "https://tncuongit-a11y.github.io/frontend/",
+  "start_url": "/frontend/",
   "display": "standalone",
   "background_color": "#3b82f6",
   "theme_color": "#3b82f6",
